@@ -39,7 +39,7 @@ This configuration supports two modes:
   - [ZMK Studio Support](#zmk-studio-support)
     - [Physical Layout Definition](#physical-layout-definition)
     - [Enabling/Disabling ZMK Studio](#enablingdisabling-zmk-studio)
-    - [Studio Unlock](#studio-unlock)
+    - [Studio Locking](#studio-locking)
   - [Building Firmware](#building-firmware)
     - [GitHub Actions (Automatic)](#github-actions-automatic)
     - [Local Build (Manual)](#local-build-manual)
@@ -478,15 +478,9 @@ ZMK Studio support is enabled by default via the build configuration in [`build.
 
 To disable ZMK Studio support, comment out the `snippet` and `cmake-args` lines in the respective build configuration.
 
-### Studio Unlock
+### Studio Locking
 
-To unlock ZMK Studio for configuration, press all three right thumb keys simultaneously:
-
-- **RET** (Return/Enter)
-- **SYMBOLS** (hold) / **SPACE** (tap)
-- **RAISE** (hold) / **BSPC** (tap)
-
-This combo is defined in [`config/charybdis.keymap`](/config/charybdis.keymap) as `combo_studio_unlock` using key positions 53, 54, and 55.
+ZMK Studio is configured to be **always unlocked** via `CONFIG_ZMK_STUDIO_LOCKING=n` in [`config/charybdis.conf`](/config/charybdis.conf). No key combo is required to configure the keyboard in ZMK Studio.
 
 ## Building Firmware
 
