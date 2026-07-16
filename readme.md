@@ -1,5 +1,5 @@
 # ZMK CONFIG FOR THE CHARYBDIS 4X6 WIRELESS SPLIT KEYBOARD ZEPHYR 4.1
-
+<!-- Trigger GitHub Actions -->
 This configuration supports two modes:
 
 - **Standalone Mode**: Right keyboard acts as central, connects directly to host
